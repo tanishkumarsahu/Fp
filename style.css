@@ -3,12 +3,12 @@
 * {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
 :root {
     --primary-color: navy;
-    --sky-blue: #00a8e8;
+    --sky-blue: #00a6e8;
     --cards-font: "Noto Sans", serif;
     --cards-bg-color: #F7F9FB;
     --dark-grey: #292929;
@@ -16,38 +16,33 @@
 }
 
 body {
+    font-family: "Poppins", sans-serif;
     background-color: #F7F9FB;
 }
-
 
 nav {
     background-color: var(--primary-color);
     display: flex;
     justify-content: flex-end;
+    width: 100%;
     align-items: center;
-    padding-right: 10px;
+    padding: 1rem 2rem;
     position: sticky;
     top: 0;
-    padding: 10px 20px;
-    font-size: 10px;
-    font-family: "Mulish", serif;
-    font-optical-sizing: auto;
+    font-size: 1rem;
     font-weight: 600;
-
 }
 
 nav ul {
-    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 2rem;
     list-style: none;
 }
 
 .nav-links {
     text-decoration: none;
-    color: var(--text-color);
     color: white;
 }
 
@@ -60,11 +55,12 @@ nav ul {
 }
 
 .button {
-    padding: 5px 20px;
-    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
     outline: none;
-    font-size: 20px;
     border: none;
+    font-size: 1rem;
+    margin-right: 1rem;
 }
 
 .white-button {
@@ -78,239 +74,237 @@ nav ul {
 }
 
 .separation {
-    height: 1.2rem;
+    width: 2px;
     border: 1px solid white;
+    height: 1.5rem;
 }
-
 
 .container {
     display: flex;
     align-items: flex-start;
     gap: 2rem;
-    margin: 30px auto;
-    width: 90%;
-    /* display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    padding: 60px 0;
-    width: 90vw;
-    margin: 0 auto; */
-}
-
-.text-section :nth-child(1) {
-
-    font-size: 50px;
+    margin: 2rem auto;
     max-width: 90vw;
-    font-family: "Poppins", serif;
+}
+
+.text-section {
+    flex: 1;
+}
+
+.text-section h2 {
+    font-size: 2.5rem;
+    max-width: 90vw;
     font-weight: 700;
-
-
-    /* max-width: 50vw;
-    padding-bottom: 20px;
-    font-style: normal; */
 }
 
-.text-section :nth-child(2) {
-    font-family: "Poppins", serif;
-    font-weight: 400;
+.text-section p {
+    font-size: 1rem;
     max-width: 80%;
-    /* max-width: 50vw;
-    font-size: 20px;
-    font-style: normal; */
+    padding: 0.5rem 0;
 }
-
 
 .image-section img {
-
-    height: 350px;
-    width: 600px;
+    max-width: 500px;
+    height: auto;
     object-fit: cover;
     border-radius: 20px;
-
 }
-
-.text-section button {
-    margin: 20px 0;
-}
-
-.text-section button:nth-of-type(2) {
-    margin: 0 20px;
-}
-
 
 .card-container {
     display: flex;
-    align-content: center;
-    justify-content: space-around;
-    gap: 10px;
-    width: 90vw;
-    height: 17vw;
-    margin: 20px auto;
-
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 90vw;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    gap: 40px;
-    width: 21vw;
-    height: 15vw;
+    align-items: center;
+    padding: 1em;
+    gap: 1rem;
+    width: 20rem;
+    height: 15rem;
     border-radius: 10px;
-
+    background-color: var(--cards-bg-color);
     transition: transform 0.2s;
 }
 
 .card:hover {
-    background-color: lightblue;
     transform: scale(1.05);
 }
 
 .card-header {
     display: flex;
+    padding: 2rem 0;
     align-items: center;
     justify-content: center;
-    gap: 5px;
-    font-size: 25px;
-    font-family: "Poppins", serif;
+    gap: 0.5rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--dark-grey);
 }
 
-
 .card-icon {
-    height: 50px;
-    width: 50px;
+    height: 3rem;
+    width: 3rem;
 }
 
 .card-desc {
-    font-size: 16px;
+    font-size: 0.9rem;
     color: var(--soft-grey);
     text-align: center;
-    font-family: "Poppins", serif;
     max-width: 90%;
-    margin: 0 auto;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto;
 }
 
 .steps-header {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-content: center;
-    margin: 50px auto;
-
+    text-align: center;
+    margin: 5rem 0;
 }
 
-.steps-header :nth-child(1) {
-    text-align: center;
-    font-size: 60px;
-    font-family: "Poppins", serif;
+.steps-header p:first-child {
+    font-size: 4rem;
     font-weight: 500;
-    color: #3B447A
+    color: #3B447A;
 }
 
-.steps-header :nth-child(2) {
-    text-align: center;
-    font-size: 20px;
-    font-family: "Poppins", serif;
+.steps-header p:last-child {
+    font-size: 1.2rem;
     font-weight: 300;
     color: var(--soft-grey);
 }
 
 .steps-container {
+    max-width: 80vw;
+    margin: 5rem auto;
+
+}
+
+footer {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 20px 0;
     display: flex;
-    align-content: center;
-    justify-content: space-around;
-    gap: 10px;
-    width: 70vw;
-    height: 17vw;
-    margin: 20px auto;
-
+    justify-content: space-between;
+    align-items: center;
 }
 
-@media (max-width: 1300px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-    }
-
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        min-width: 250px;
-        min-height: 200px;
-
-    }
-
-    .card span {
-        font-size: 20px;
-    }
-
-    .card-desc {
-        font-size: 13px;
-    }
-
-    .text-section h2 {
-        max-width: 90vw;
-    }
-
-    .text-section :nth-child(1) {
-        max-width: 60vw;
-
-    }
-
-    .text-section :nth-child(2) {
-        max-width: 60vw;
-
-    }
-
-
-
-    /* .steps-header :nth-child(1) {
-        text-align: center;
-        font-size: 3em;
-        font-family: "Poppins", serif;
-        font-weight: 500;
-    }
-
-    .steps-header :nth-child(2) {
-        text-align: center;
-        font-size: 1em;
-        font-family: "Poppins", serif;
-        font-weight: 300;
-    } */
+.footer-content {
+    color: white;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
 
 }
 
-@media (max-width: 1000px) {
+.footer-col {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-col:last-child {
+    margin-right: 0;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 5px;
+}
+
+.footer-col ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links li {
+    margin-right: 10px;
+}
+
+.social-links a {
+    font-size: 18px;
+}
+
+.social-links svg {
+    fill: var(--sky-blue)
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+
+.footer-col form {
+    display: flex;
+}
+
+.footer-col form input[type="email"] {
+    width: 20vw;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.footer-col form button {
+    background-color: #00a6e8;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.footer-col :nth-child(1) {
+    color: white;
+}
+
+.footer-container {
+    flex-direction: column;
+}
+
+
+@media (max-width: 1023px) {
     .container {
         flex-direction: column;
-        padding: 20px;
-
+        padding: 1rem;
     }
 
     .text-section h2 {
-        font-size: 20px;
+        font-size: 2.5rem;
     }
 
     .text-section p {
-        font-size: 14px;
+        font-size: 1rem;
     }
 
-    .button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
 
     .image-section img {
         max-width: 100%;
-        height: auto;
     }
 
     .card-container {
@@ -319,20 +313,45 @@ nav ul {
     }
 
     .card {
-        padding: 10px;
-    }
-
-    .steps-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 15px;
+        width: 80%;
+        margin-bottom: 1rem;
     }
 
     .card-header span {
-        font-size: 16px;
+        font-size: 1.8rem;
     }
 
     .card-desc {
-        font-size: 14px;
+        font-size: 1rem;
+    }
+
+    .steps-header p:first-child {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-section h2 {
+        font-size: 2rem;
+    }
+
+    .text-section p {
+        font-size: 0.9rem;
+    }
+
+    .card-header span {
+        font-size: 1.3rem;
+    }
+
+    .card-desc {
+        font-size: 1rem;
+    }
+
+    .steps-header p:first-child {
+        font-size: 2rem;
+    }
+
+    .footer-content {
+        gap: 2rem;
     }
 }
