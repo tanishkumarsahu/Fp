@@ -29,18 +29,27 @@ Dashboard/
 ├── next.config.mjs       # Next.js configuration
 ├── tsconfig.json         # TypeScript config
 └── ...
+```
 
 ---
-## Install Dependencies
 
-pnpm install
-# or
+## Install Dependencies
+```bash
 npm install
-# or
+```
+or
+```bash
+pnpm install
+```
+or
+```bash
 yarn install
+```
+
 
 ---
 
 ## Start the Development Server
-
+```bash
 npm run dev
+```
