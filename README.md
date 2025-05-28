@@ -1,6 +1,6 @@
-# 🧭 B2B Dashboard 
+# 📊 Dashboard 
 
-This is a **private** and **internal-use** B2B Dashboard project built with **Next.js**, **Tailwind CSS**, and **TypeScript**. It provides a modular architecture for dashboards or admin panels. This repository is intended to assist the development team in maintaining and extending the project.
+Internal-use B2B dashboard built with **Next.js**, **Tailwind CSS**, and **TypeScript**. Modular structure for rapid admin panel development.
 
 ---
 
