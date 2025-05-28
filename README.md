@@ -30,6 +30,7 @@ Dashboard/
 ├── tsconfig.json         # TypeScript config
 └── ...
 
+---
 
 ## Install Dependencies
 
@@ -38,6 +39,8 @@ pnpm install
 npm install
 # or
 yarn install
+
+---
 
 ## Start the Development Server
 
