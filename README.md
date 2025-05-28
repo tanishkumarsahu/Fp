@@ -1,6 +1,6 @@
 # 📊 Dashboard 
 
-Internal-use B2B dashboard built with **Next.js**, **Tailwind CSS**, and **TypeScript**. Modular structure for rapid admin panel development.
+Dashboard built with **Next.js**, **Tailwind CSS**, and **TypeScript**. Modular structure for rapid admin panel development.
 
 ---
 
